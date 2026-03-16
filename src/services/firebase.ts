@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
- apiKey: "AIzaSyCfZsPLTR6UVIfq3B6Va2fNLRH6h8Mk9tY",
-  authDomain: "medaccess-fcf50.firebaseapp.com",
-  projectId: "medaccess-fcf50",
-  storageBucket: "medaccess-fcf50.firebasestorage.app",
-  messagingSenderId: "863318366655",
-  appId: "1:863318366655:web:1043871a5dec432601e90a"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
